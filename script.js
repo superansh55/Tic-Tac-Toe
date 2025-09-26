@@ -176,10 +176,10 @@ const gameDisplay = (function () {
         
 
         if (gameStatus === "P1 win") {
-          winner.innerText = `${p1DisplayName.textContent} Wins`;
+          winner.innerText = ` Winner: ${p1DisplayName.textContent} `;
           
         } else if (gameStatus === "P2 win") {
-          winner.innerText = `${p2DisplayName.textContent} Wins`;
+          winner.innerText = `Winner: ${p2DisplayName.textContent} `;
           
         } else if (gameStatus === "tie game") {
           winner.innerText = "Tie";
@@ -197,7 +197,7 @@ const gameDisplay = (function () {
   changeDisplay();
   const createAndUpdatePlayer = (pName, pDisplay) => {
     const p = createPlayer(pName.value);
-    pDisplay.textContent = p.playerName + ":";
+    pDisplay.textContent = p.playerName;
   };
   startGame.addEventListener("click", () => {
     createAndUpdatePlayer(p1Name, p1DisplayName);
