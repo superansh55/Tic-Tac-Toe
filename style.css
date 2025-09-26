@@ -20,11 +20,17 @@
     align-items: center;
     font-size: 100px;
     font-weight: bold;
+    
+   
 }
 
 .gameScreen{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3, 1fr);
+     
+  
+      
 }
 
 .options{
