@@ -207,5 +207,6 @@ const gameDisplay = (function () {
     p1Score.innerText = "0";
     p2Score.innerText = "0";
     pSymbol = "x";
+    winner.innerText="";
   });
 })();
